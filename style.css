@@ -1,0 +1,1374 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://db.onlinewebfonts.com/c/0ff8990774ec4865c7f45befbafd4910?family=Gotham+Regular");
+@import url("https://db.onlinewebfonts.com/c/3a47f5f06b5484abfeee9eac90348a9c?family=Gotham-Medium");
+@import url("https://db.onlinewebfonts.com/c/a9db6cd9116ff56da3875b35444f0c45?family=GothamBook");
+
+:root {
+  --gold: #8c6e47;
+  --black: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.gotham {
+  font-family: "gotham regular", "poppins", sans-serif, Arial, Helvetica;
+}
+
+.goudy-bold {
+  font-family: "Goudy  Titling W05 Bold", "poppins", sans-serif, Arial,
+    Helvetica;
+}
+
+.goudy-regular {
+  font-family: "Goudy  Titling W05 Regular", "poppins", sans-serif, Arial,
+    Helvetica;
+}
+
+.goudy-semibold {
+  font-family: "Goudy Titling W05 SemiBold", "poppins", sans-serif, Arial,
+    Helvetica;
+}
+
+.container-custom {
+  padding: 0.5vh 2.5vw;
+}
+
+/* Offcanvas */
+.offcanvas .tengah img {
+  height: 10vh;
+}
+
+.offcanvas .kanan .link-book {
+  padding: 10px 20px 10px 20px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "gotham regular";
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+}
+
+.offcanvas .offcanvas-body .menu-container .menu-header ul {
+  margin-bottom: 60px;
+}
+
+.offcanvas .offcanvas-body .menu-container li {
+  margin-bottom: 20px;
+}
+
+.offcanvas .offcanvas-body .menu-container .menu-header li.margin-top {
+  margin-top: 40px;
+}
+
+.offcanvas .offcanvas-body .menu-container .menu-header li a {
+  padding: 0;
+  line-height: 1.2;
+  text-decoration: none;
+  color: white;
+  font-family: "Goudy Titling W05 SemiBold", "poppins", sans-serif, Arial,
+    Helvetica;
+  font-size: 30px;
+}
+
+.offcanvas .offcanvas-body .menu-container ul li {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.offcanvas .offcanvas-body .menu-container .menu-small li a {
+  padding: 0;
+  line-height: 1.2;
+  text-decoration: none;
+  color: white;
+  font-family: "gotham regular", "poppins", sans-serif, Arial, Helvetica;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.offcanvas .offcanvas-body .room-suites a {
+  text-decoration: none;
+}
+
+.offcanvas .swiper-slide {
+  margin-right: 40px;
+  width: 456px !important;
+}
+
+.offcanvas a {
+  all: unset;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.offcanvas .swiper-slide .image-container {
+  margin-bottom: 32px;
+  overflow: hidden;
+  aspect-ratio: 1.4;
+}
+
+.offcanvas .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-height: 1000px;
+  object-position: center;
+}
+
+/* Navbar */
+nav {
+  padding: 0;
+}
+
+nav .navbar {
+  padding: 16px 40px;
+}
+
+/* Left Navbar */
+nav .hamburger-menu .hamburger-icon_top,
+nav .hamburger-menu .hamburger-icon_bottom {
+  position: relative;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 43px;
+  height: 1px;
+  background-color: rgb(255, 255, 255);
+  padding: 0;
+  transition: all 0.25s ease-in-out;
+}
+
+nav .hamburger-menu .hamburger-icon_top {
+  transform: translateY(calc(-50% - 5px));
+}
+
+nav .hamburger-menu .hamburger-icon_bottom {
+  transform: translateY(calc(-50% + 5px));
+}
+
+.left-side-navbar,
+.right-side-navbar {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+/* Center Navbar */
+.center-navbar .logo img {
+  height: 12vh;
+}
+
+/* Right Navbar */
+nav .link-book {
+  padding: 10px 20px 10px 20px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "gotham regular";
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+}
+
+/* INDEX HTML  */
+/* Section 1 */
+.hero {
+  width: 100%;
+  height: 85vh;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.hero .background {
+  background-image: url(https://parklanecph.com/en/wp-content/uploads/sites/6/2024/02/lobby-2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1000;
+  background-position: center;
+}
+
+.hero .background .cover {
+  width: 100%;
+  height: 100%;
+  background: rgba(47, 39, 32, 0.3);
+}
+
+.hero .heroParallax {
+  color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.boxParallax {
+  padding: 32px 0;
+  margin: 0 64px 80px 64px;
+}
+
+/* Section 2 */
+#historical {
+  background: #f5f2ee;
+  padding: 120px 0;
+  width: 100%;
+  height: 100%;
+}
+
+#historical .big-image-container .image-frame img {
+  height: 100%;
+  max-height: 1000px;
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 0.85;
+  z-index: 1;
+}
+
+#historical .img-frame {
+  padding: 15px;
+  border: 1px solid #8c6e47;
+}
+
+.overline {
+  font-size: 20px;
+  letter-spacing: 1.7px;
+  line-height: 1;
+  text-transform: uppercase;
+  pointer-events: none;
+  margin-bottom: 20px;
+}
+
+.historical .crown-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.historical .crown-container .crown {
+  position: absolute;
+  bottom: -70px;
+}
+
+.link-about {
+  text-decoration: none;
+  color: var(--gold);
+  border-bottom: 1px solid var(--gold);
+  display: flex;
+  width: 62%;
+  padding: 10px 0;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.link-about p {
+  transition: 0.3s all;
+}
+
+.link-about:hover p {
+  margin-left: 10px;
+}
+
+/* Section 3 */
+
+#section3 {
+  background: #e5ddd2;
+  width: 100%;
+  height: 100%;
+  padding: 120px 0;
+}
+
+#section3 .link img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1.05);
+  transition: 0.3s all ease-out;
+}
+
+#section3 .title-link {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  line-height: 1.15;
+  font-size: 24px;
+  margin: 0;
+}
+
+#section3 {
+  background: #e5ddd2;
+  width: 100%;
+  height: 100%;
+}
+
+/* Section 4 */
+#section4 {
+  width: 100%;
+  height: 100%;
+  padding: 0 0;
+  background-color: white;
+}
+
+/* Section 5 */
+#section5 {
+  padding: 120px 0;
+  background-color: #f5f2ee;
+  width: 100%;
+  height: 100%;
+}
+
+#section5 .big-image-container {
+  padding-top: 7%;
+}
+
+#section5 .img-fluid .img {
+  height: 100%;
+  max-height: 1000px;
+  width: 100%;
+  object-fit: cover;
+}
+
+#section5 .content-container {
+  padding-left: 7%;
+}
+
+#section5 .content-media-container {
+  max-width: 470px;
+  margin-bottom: 14%;
+}
+
+#section5 .content-media-container .overflow-container {
+  aspect-ratio: 0.8;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#section5 .img-frame {
+  padding: 15px;
+  border: 1px solid #8c6e47;
+}
+
+#section5 .content-media-container .overflow-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.link-s5 {
+  text-decoration: none;
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  display: flex;
+  width: 30%;
+  padding: 10px 0;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.link-s5 p {
+  transition: 0.3s all;
+  padding: 0 20px;
+}
+
+.link-s5:hover p {
+  margin-left: 10px;
+}
+
+/* Section 6 */
+#section6 {
+  padding-bottom: 120px;
+  background-color: #f5f2ee;
+  width: 100%;
+  height: 100%;
+}
+
+#section6 .archive-link {
+  text-decoration: none;
+}
+
+#section6 .archive-link h2 {
+  font-family: "Goudy Titling W05 SemiBold", "poppins", sans-serif, Arial,
+    Helvetica;
+  color: black;
+  font-size: 50px;
+}
+
+#section6 .swiper-slide {
+  margin-right: 40px;
+  width: 600px !important;
+}
+
+#section6 a {
+  all: unset;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#section6 .swiper-slide .image-container {
+  margin-bottom: 32px;
+  overflow: hidden;
+  aspect-ratio: 1.4;
+}
+
+#section6 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-height: 1000px;
+  object-position: center;
+}
+
+.line-heading {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+
+/* footer */
+footer {
+  background: #e5ddd2;
+  padding: 3rem 0;
+  width: 100%;
+  height: 100%;
+}
+
+footer .logo-container {
+  padding-bottom: 6rem;
+}
+
+footer .inside-footer .text-widget a {
+  font-family: "Goudy Titling W05 SemiBold", "poppins", sans-serif, Arial,
+    Helvetica;
+  text-decoration: none;
+  color: #8c6e47;
+}
+
+footer .widget-title {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Goudy Titling W05 SemiBold", "poppins", sans-serif, Arial,
+    Helvetica;
+  font-size: 24px;
+}
+
+footer .inside-footer .text-footer a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "gotham regular", "poppins", sans-serif, Arial, Helvetica;
+  font-size: 15px;
+}
+
+footer i {
+  font-size: 2rem;
+  color: #8c6e47;
+}
+
+footer .medsos a {
+  text-decoration: none;
+}
+
+footer .row input {
+  border-radius: 0;
+  border-color: #000000;
+  background-color: #e5ddd2;
+  font-family: "gotham regular", "poppins", sans-serif, Arial, Helvetica;
+  font-style: italic;
+}
+
+footer .row button {
+  color: var(--gold);
+  border-color: var(--gold);
+  background-color: #e5ddd2;
+  border-radius: 0;
+  font-family: "gotham regular", "poppins", sans-serif, Arial, Helvetica;
+}
+
+footer .row a {
+  color: #000000;
+  text-decoration: none;
+}
+
+footer .inside-footer {
+  padding-bottom: 3rem;
+}
+
+footer .row .akhir a,
+p {
+  font-family: "gotham regular", "poppins", sans-serif, Arial, Helvetica;
+  color: var(--gold) !important;
+  font-size: 16px;
+}
+
+footer .akhir-padding1 {
+  margin-left: 4vw;
+}
+
+footer .akhir-padding2 {
+  margin-right: 4vw;
+}
+
+/* Halaman Rooms */
+.hero-rooms {
+  width: 100%;
+  height: 30vh;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.hero-rooms .background-rooms {
+  background-image: url(https://parklanecph.com/en/wp-content/uploads/sites/6/2024/03/suite-201-3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1000;
+  background-position: center;
+}
+
+.hero-rooms .background-rooms .cover {
+  width: 100%;
+  height: 100%;
+  background: rgba(47, 39, 32, 0.3);
+}
+
+/* Section 2 Rooms */
+#archive-rooms {
+  padding: 120px 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f5f2ee;
+}
+
+#archive-rooms .image-container-rooms {
+  overflow: hidden;
+  margin-bottom: 32px;
+  aspect-ratio: 1.4;
+}
+
+#archive-rooms img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#archive-rooms a {
+  text-decoration: none;
+  color: #000000;
+}
+
+#archive-rooms .flex-info {
+  font-weight: 400;
+}
+
+/* Apartments */
+/* Section 1 */
+.hero-apartments {
+  width: 100%;
+  height: 30vh;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.hero-apartments .background-apartments {
+  background-image: url(https://parklanecph.com/en/wp-content/uploads/sites/6/2024/03/WhatsApp-Image-2023-08-02-at-10.07.36-2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1000;
+  background-position: center;
+}
+
+.hero-apartments .background-apartments .cover {
+  width: 100%;
+  height: 100%;
+  background: rgba(47, 39, 32, 0.3);
+}
+
+/* Section 2 */
+#archive-apartments {
+  padding: 120px 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f5f2ee;
+}
+
+#archive-apartments .image-container-apartments {
+  overflow: hidden;
+  margin-bottom: 32px;
+  aspect-ratio: 1.4;
+}
+
+#archive-apartments img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#archive-apartments a {
+  text-decoration: none;
+  color: #000000;
+}
+
+#archive-apartments .flex-info {
+  font-weight: 400;
+}
+
+/* Meetings */
+/* Section 1 */
+.hero-meetings {
+  width: 100%;
+  height: 30vh;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.hero-meetings .background-meetings {
+  background-image: url(https://parklanecph.com/en/wp-content/uploads/sites/6/2024/03/Meetingroom2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1000;
+  background-position: center;
+}
+
+.hero-meetings .background-meetings .cover {
+  width: 100%;
+  height: 100%;
+  background: rgba(47, 39, 32, 0.3);
+}
+
+/* Section 2 */
+#prof-gath .meeting-rooms-info {
+  line-height: 1.15;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+#prof-gath .container-meetings {
+  padding-bottom: 120px;
+}
+
+.container-meetings .desc p {
+  letter-spacing: 1.6px;
+}
+
+#prof-gath {
+  padding: 120px 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f5f2ee;
+}
+
+#prof-gath .img-frame {
+  padding: 15px;
+  border: 1px solid var(--gold);
+}
+
+#prof-gath .img-frame img {
+  height: 100%;
+  width: 100%;
+  max-height: 1000px;
+  object-fit: cover;
+  aspect-ratio: 0.85;
+}
+
+#prof-gath .content-prof {
+  padding: 3% 0 3% 7%;
+}
+
+#prof-gath .content-prof-media {
+  max-width: 520px;
+  margin-bottom: 15%;
+}
+
+.content-prof-media .overflow-container {
+  aspect-ratio: 1.45;
+  overflow: hidden;
+  width: 100%;
+}
+
+.content-prof-media .overflow-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content-prof-text .tixt {
+  max-width: 535px;
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.content-prof-text p {
+  max-width: 510px;
+  letter-spacing: 1.6px;
+}
+
+.btn-container-prof {
+  width: 10vw;
+  border: 1px solid var(--gold);
+  border-radius: 0%;
+  color: var(--gold);
+}
+
+.btn-container-prof a {
+  text-decoration: none;
+  color: var(--gold);
+}
+
+/* Section 3 */
+#disc-park {
+  background-color: #e5ddd2;
+  width: 100%;
+  height: 100%;
+  padding: 120px 0;
+}
+
+#disc-park .content {
+  max-width: 520px;
+  margin-bottom: 60px;
+  margin: 0 auto;
+}
+
+#disc-park .content h2 {
+  font-size: 50px;
+}
+
+#disc-park .content p {
+  letter-spacing: 1.6px;
+}
+
+#disc-park .repeater .link .image-container {
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 0.833;
+  width: 100%;
+  display: flex;
+}
+
+#disc-park .repeater .link .image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#disc-park .repeater .link .image-container .line-heading-new {
+  padding: 36px 42px;
+  margin-bottom: 0;
+  position: relative;
+  align-self: flex-end;
+  z-index: 1;
+}
+
+#disc-park .repeater a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Section 4 */
+#hcm {
+  width: 100%;
+  height: 100%;
+  background-color: #f5f2ee;
+  padding: 120px 0;
+}
+
+#hcm .content {
+  margin-bottom: 35px;
+}
+
+#hcm .content h2 {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 50px;
+  line-height: 1.15;
+  max-width: 535px;
+}
+
+#hcm .content p {
+  max-width: 520px;
+  letter-spacing: 1.6px;
+  margin-bottom: 1.5em;
+}
+
+.container-custom-khusus {
+  padding: 0 10vw;
+}
+
+#hcm .crown-container {
+  position: relative;
+  display: flex;
+
+  padding-right: 10px;
+}
+
+#hcm .crown-container .crown {
+  position: absolute;
+  bottom: -140px;
+  right: -20px;
+}
+
+/* restaurants */
+.hero-restaurants {
+  width: 100%;
+  height: 30vh;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.hero-restaurants .background-restaurants {
+  background-image: url(https://parklanecph.com/en/wp-content/uploads/sites/6/2024/03/Restaurant-Banner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1000;
+  background-position: center;
+}
+
+.hero-restaurants .background-restaurants .cover {
+  width: 100%;
+  height: 100%;
+  background: rgba(47, 39, 32, 0.3);
+}
+
+/* Section 2 */
+#rest-gath .restaurants-rooms-info {
+  line-height: 1.15;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.container-restaurants {
+  padding-bottom: 120px;
+}
+
+.container-restaurants .desc p {
+  letter-spacing: 1.6px;
+}
+
+#rest-gath {
+  padding: 90px 0 0 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f5f2ee;
+}
+
+#rest-gath .btn-container {
+  border: 1px solid var(--gold);
+  width: 10vw;
+  display: flex;
+  justify-content: center;
+}
+
+#rest-gath .btn-container a {
+  text-decoration: none;
+  color: var(--gold);
+  font-weight: 500;
+  width: fit-content;
+}
+
+/* Section 3 */
+
+#rest-park .content {
+  max-width: 520px;
+  margin-bottom: 60px;
+  margin: 0 auto;
+}
+
+#rest-park .content h2 {
+  font-size: 50px;
+}
+
+#rest-park .content p {
+  letter-spacing: 1.6px;
+}
+
+#rest-park .repeater .link .image-container {
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 0.833;
+  width: 100%;
+  display: flex;
+}
+
+#rest-park .repeater .link .image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#rest-park .repeater .link .image-container .line-heading-new {
+  padding: 36px 42px;
+  margin-bottom: 0;
+  position: relative;
+  align-self: flex-end;
+  z-index: 1;
+}
+
+#rest-park .repeater a {
+  text-decoration: none;
+  color: white;
+}
+
+#taste-freedom {
+  padding: 120px 0;
+}
+
+#taste-freedom .text-freedom {
+  max-width: 520px;
+  letter-spacing: 1.6px;
+}
+
+.taste-btn {
+  margin-bottom: 15%;
+}
+
+#taste-freedom .content-media-container {
+  width: 100%;
+}
+
+#taste-freedom .content-media-container .overflow-container {
+  aspect-ratio: 1.45;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#taste-freedom .content-media-container .overflow-container {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  justify-content: start;
+}
+
+#taste-freedom .column-satu {
+  padding-top: 7%;
+  padding-right: 7%;
+}
+
+#taste-freedom .column-satu .content-media-container .overflow-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#taste-freedom .column-dua .mobile-media-container {
+  display: none;
+}
+
+#taste-freedom .column-dua .img-frame {
+  padding: 15px;
+  border: 1px solid var(--gold);
+}
+#taste-freedom .column-dua {
+  padding-bottom: 7%;
+}
+
+#taste-freedom .column-dua img {
+  height: 100%;
+  max-height: 1000px;
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 0.85;
+}
+
+/* Section 3 */
+#gambar-big {
+  height: 100%;
+  width: 100%;
+  background-color: #f5f2ee;
+}
+
+#gambar-big .overflow-container {
+  width: 100%;
+  overflow: hidden;
+  max-height: 75vh;
+}
+
+#gambar-big .overflow-container img {
+  max-width: 105%;
+  max-width: unset;
+  width: 100%;
+}
+
+/* Section 4 */
+
+#our-menu {
+  height: 100%;
+  width: 100%;
+  background-color: #f5f2ee;
+  padding: 120px 0;
+}
+
+#our-menu .big-image-container {
+  padding-bottom: 7%;
+}
+
+#our-menu .big-image-container img {
+  height: 100%;
+  max-height: 1000px;
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 0.85;
+}
+
+.mobile-media-container {
+  display: none;
+}
+
+#our-menu .btn-container {
+  border: 1px solid var(--gold);
+  width: 10vw;
+  display: flex;
+  justify-content: center;
+}
+
+#our-menu .btn-container a {
+  text-decoration: none;
+  color: var(--gold);
+  font-weight: 500;
+  width: fit-content;
+}
+
+#our-menu .content p {
+  max-width: 520px;
+  letter-spacing: 1.6px;
+}
+
+#our-menu .text-ourmenu {
+  padding-top: 7%;
+  padding-left: 7%;
+}
+
+#our-menu .text-ourmenu .content-media-container {
+  margin-top: 15%;
+  width: 100%;
+}
+
+#our-menu .text-ourmenu .content-media-container {
+  padding: 15px;
+  border: 1px solid var(--gold);
+}
+
+#our-menu .text-ourmenu .content-media-container .overflow-container {
+  aspect-ratio: 1.45;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#our-menu .text-ourmenu .content-media-container .overflow-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* WINE BAR */
+.hero-winebar {
+  width: 100%;
+  height: 30vh;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.hero-winebar .background-winebar {
+  background-image: url(https://parklanecph.com/en/wp-content/uploads/sites/6/2024/03/wine-bar.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1000;
+  background-position: center;
+}
+
+.hero-winebar .background-winebar .cover {
+  width: 100%;
+  height: 100%;
+  background: rgba(47, 39, 32, 0.3);
+}
+
+#winebar-park .content {
+  max-width: 520px;
+  margin-bottom: 60px;
+  margin: 0 auto;
+}
+
+#winebar-park .content h2 {
+  font-size: 50px;
+}
+
+#winebar-park .content p {
+  letter-spacing: 1.6px;
+}
+
+#winebar-park .repeater .link .image-container {
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 0.833;
+  width: 100%;
+  display: flex;
+}
+
+#winebar-park .repeater .link .image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#winebar-park .repeater .link .image-container .line-heading-new {
+  padding: 36px 42px;
+  margin-bottom: 0;
+  position: relative;
+  align-self: flex-end;
+  z-index: 1;
+}
+
+#winebar-park .repeater a {
+  text-decoration: none;
+  color: white;
+}
+
+#winebar-freedom {
+  padding: 120px 0;
+  background-color: #f5f2ee;
+}
+
+#winebar-freedom .text-freedom {
+  max-width: 520px;
+  letter-spacing: 1.6px;
+}
+
+.winebar-btn {
+  margin-bottom: 15%;
+}
+
+#winebar-freedom .content-media-container {
+  width: 100%;
+}
+
+#winebar-freedom .content-media-container .overflow-container {
+  aspect-ratio: 1.45;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#winebar-freedom .content-media-container .overflow-container {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  justify-content: start;
+}
+
+#winebar-freedom .column-satu {
+  padding-top: 7%;
+  padding-right: 7%;
+}
+
+#winebar-freedom .column-satu .content-media-container .overflow-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#winebar-freedom .column-dua .mobile-media-container {
+  display: none;
+}
+
+#winebar-freedom .column-dua .img-frame {
+  padding: 15px;
+  border: 1px solid var(--gold);
+}
+#winebar-freedom .column-dua {
+  padding-bottom: 7%;
+}
+
+#winebar-freedom .column-dua img {
+  height: 100%;
+  max-height: 1000px;
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 0.85;
+}
+
+#winebar-gath {
+  padding: 90px 0 120px 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f5f2ee;
+}
+
+#section-wine {
+  padding: 120px 0;
+  background-color: #f5f2ee;
+  width: 100%;
+  height: 100%;
+}
+
+#section-wine .img-fluid .img {
+  height: 100%;
+  max-height: 1000px;
+  width: 100%;
+  object-fit: cover;
+}
+
+#section-wine .big-image-container img {
+  height: 100%;
+  max-height: 1000px;
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 0.85;
+}
+
+#section-wine .content-container {
+  padding-left: 7%;
+}
+
+#section-wine .content-media-container {
+  max-width: 520px;
+  margin-bottom: 14%;
+  padding-top: 9%;
+}
+
+#section-wine .content-media-container .overflow-container {
+  aspect-ratio: 1.45;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#section-wine .img-frame {
+  padding: 15px;
+  border: 1px solid #8c6e47;
+}
+
+#section-wine .content-media-container .overflow-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+
+#winebar-freedom .winebar-btn {
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  width: 11vw;
+  display: flex;
+  justify-content: center;
+}
+
+#winebar-freedom .winebar-btn a {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+#winebar-freedom .content-media-container .overflow-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ABOUT HOTEL */
+/* Section 1 */
+.hero-about {
+  width: 100%;
+  height: 30vh;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.hero-about .background-about {
+  background-image: url(https://parklanecph.com/en/wp-content/uploads/sites/6/2024/02/PL-FACADE-FINAL-12.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1000;
+  background-position: center;
+}
+
+.hero-about .background-about .cover {
+  width: 100%;
+  height: 100%;
+  background: rgba(47, 39, 32, 0.3);
+}
+
+/* Section 3 */
+
+#about-history {
+  padding: 120px 0;
+  background-color: #e5ddd2;
+}
+
+#about-history .container-timeline img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#about-history .container-timeline .text-container {
+  max-width: 520px;
+}
+
+#about-history .container-timeline span {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 1px;
+  background-color: var(--gold);
+}
